@@ -27,7 +27,7 @@
      - **Size:** 2 vcpus
      - **Username:** userryan
    - **Networking**
-     - **Virtual Network:**
+     - **Virtual Network:** VNet-01
     
 <p align="center">
   Image 3
