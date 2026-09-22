@@ -510,3 +510,64 @@ REDO THIS ONE IT HAS THE HYPHENS IN IT
 12. Run **clear**
 
 ---
+
+### 10) Shell Scripting Basics
+
+1. Run **nano create_user.sh**
+`Opens the nano text editor to create a new script file.`
+2. Press **Ctrl+O** then paste the following script then **Enter** then **Ctrl+X**
+
+<p align="center">
+  Image 62
+</p>
+
+3. Run **chmod +x create_user.sh**
+`Makes the script executable.`
+
+<p align="center">
+  Image 63
+</p>
+
+4. Run **./create_user.sh bobjones it**
+`Runs the script to create a new user, bobjones, and add him to the it group — this doubles as adding a fourth employee to your fictional company.`
+
+<p align="center">
+  Image 64
+</p>
+
+5. Run **./create_user.sh bobjones it** again
+`Runs the script a second time with the same arguments, demonstrating the "already exists" check working correctly instead of erroring out or creating a duplicate.`
+
+<p align="center">
+  Image 65
+</p>
+
+6. Run **./create_user.sh**
+`Demonstrates the usage/error message that prints when required arguments are missing.`
+
+<p align="center">
+  Image 66
+</p>
+
+7. Run **cat user_creation.log**
+`Displays the full log file, showing every action the script has taken so far.`
+
+<p align="center">
+  Image 67
+</p>
+
+8. Run **grep "Created" user_creation.log**
+`Uses grep to filter the log down to just successful user creation events, ignoring any skipped/duplicate attempts.`
+
+<p align="center">
+  Image 68
+</p>
+
+9. Run **groups bobjones**
+`Confirms bobjones was actually created and added to the correct group, verifying the script's work outside the log file itself.`
+
+<p align="center">
+  Image 69
+</p>
+
+10. Run **clear**
