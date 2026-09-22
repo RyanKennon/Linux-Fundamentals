@@ -2,7 +2,7 @@
   <img src="Images/Header.png" img width="469" height="263" alt="image">
 </p>
 
-# Linux Server Setup & Administration (Azure Virtual Environment)
+# Linux Server Setup & Administration
 
 This project demonstrates hands-on Linux system administration on an Ubuntu Server 22.04 environment hosted in Microsoft Azure. The lab walks through provisioning the server, exploring the filesystem, managing users and groups, configuring file permissions, installing and verifying software, monitoring system processes and resources, diagnosing basic networking issues, and writing a Bash script to automate user provisioning. This lab reinforces essential Linux skills used in IT Support and Systems Administration roles, and was built while studying for the Linux Essentials certification.
 
