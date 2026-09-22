@@ -448,7 +448,7 @@ This project demonstrates hands-on Linux system administration on an Ubuntu Serv
    <img src="Images/Image 49.PNG">
 </p>
 
-9. Run **kill <PID>**<br>
+9. Run **`kill <PID>`** <br>
 `Terminates the sleep process using its PID, sending the default termination signal to stop it.`
 10. Run **ps aux | grep sleep**<br>
 `Confirms the process no longer appears in the list, showing the kill was successful. Only the grep command itself should show up this time, since its own search pattern contains the word "sleep."`
