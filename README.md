@@ -88,7 +88,7 @@
 </p>
 
 8. Run **grep -i ubuntu /etc/os-release**<br>
-`Uses grep to filter the os-release output down to just the lines mentioning "ubuntu," highlighting the matches — a quick way to confirm the distro without reading the full file.`
+`Uses grep to filter the os-release output down to just the lines mentioning "ubuntu," highlighting the matches. This is a quick way to confirm the distro without reading the full file.`
 
 <p align="center">
   <img src="Images/Image 11.PNG">
@@ -142,7 +142,7 @@
 </p>
 
 2. Run **sudo apt install mlocate**<br>
-`Installs the mlocate package, which provides the locate command`
+`Installs the mlocate package, which provides the locate command.`
 
 <p align="center">
   <img src="Images/Image 17.PNG">
@@ -230,10 +230,10 @@
    <img src="Images/Image 27.PNG">
 </p>
 
-7. Run **sudo usermod -aG finance johnsmith<br>
+7. Run **sudo usermod -aG finance johnsmith**<br>
 `Adds johnsmith to the finance group (-aG appends to existing groups rather than overwriting them).`
-8. Run **sudo usermod -aG it janedoe<br>
-`Adds janedoe to the finance group.`
+8. Run **sudo usermod -aG it janedoe**<br>
+`Adds janedoe to the it group.`
 
 <p align="center">
    <img src="Images/Image 28.PNG">
@@ -248,7 +248,7 @@
    <img src="Images/Image 29.PNG">
 </p>
 
-11. Run **cat /etc/passwd | grep -E "johnsmith|janedoe"<br>
+11. Run **cat /etc/passwd | grep -E "johnsmith|janedoe"**<br>
 `Uses grep to filter the full user database down to just the two new accounts, showing their UID, GID, home directory, and shell.`
 
 <p align="center">
@@ -257,8 +257,8 @@
 
 12. Run **cat /etc/group | grep -E "finance|it"**<br>
 `Uses grep to filter the group database down to just the two new groups and confirm membership.`
-13. Run **cat /etc/group | grep -E "^(finance|it):"<br>
-`Refines the earlier grep command by anchoring the pattern to the start of the line and requiring a colon right after, so only the actual finance and it group entries match — filtering out johnsmith, which got pulled in previously because "it" appears inside "smith."`
+13. Run **cat /etc/group | grep -E "^(finance|it):"**<br>
+`Refines the earlier grep command by anchoring the pattern to the start of the line and requiring a colon right after, so only the actual finance and it group entries match. This filters out johnsmith, who got pulled in previously because "it" appears inside "smith."`
 
 <p align="center">
    <img src="Images/Image 31.PNG">
@@ -294,9 +294,9 @@
 </p>
 
 5. Run **sudo -u johnsmith touch /shared/test.txt**<br>
-`Simulates johnsmith (a member of finance) creating a file inside /shared — should succeed since he's in the group with access.`
+`Simulates johnsmith, a member of finance, creating a file inside /shared. This should succeed since he's in the group with access.`
 6. Run **sudo -u janedoe touch /shared/test2.txt**<br>
-`stgfsdgsfdgsdfgs`
+`Simulates janedoe, a member of it rather than finance, attempting the same action. This should fail with a permission error, demonstrating that the access restriction actually works.`
 
 <p align="center">
    <img src="Images/Image 35.PNG">
@@ -371,22 +371,21 @@
 </p>
 
 2. Run **ps aux | grep nginx**<br>
-`Uses grep to filter the full process list down to just the nginx worker/master processes, confirming they're running`
+`Uses grep to filter the full process list down to just the nginx worker/master processes, confirming they're running.`
 
 <p align="center">
    <img src="Images/Image 44.PNG">
 </p>
 
 3. Run **top**<br>
-`Opens an interactive, real-time view of system resource usage — processes, CPU, memory — updating live. Press q to exit.`
-REDO THIS ONE IT HAS THE HYPHENS IN IT
+`Opens an interactive view of system resource usage, including processes, CPU, and memory, updating live. Press q to exit.`
 
 <p align="center">
    <img src="Images/Image 45.PNG">
 </p>
 
 4. Run **ps aux --sort=-%mem | head -5**<br>
-`Sorts all processes by memory usage, highest first, and shows the top 5 — simulating the "find what's eating memory" step in a slow-server scenario.`
+`Sorts all processes by memory usage, highest first, and shows the top 5, simulating the "find what's eating memory" step in a scenario where the server is running slow.`
 
 <p align="center">
    <img src="Images/Image 46.PNG">
@@ -515,7 +514,7 @@ REDO THIS ONE IT HAS THE HYPHENS IN IT
 
 1. Run **nano create_user.sh**<br>
 `Opens the nano text editor to create a new script file.`
-2. Press **Ctrl+O** then paste the [create_user.sh](scripts/create_user.sh). script then **Enter** then **Ctrl+X**
+2. Press **Ctrl+O** then paste the [create_user.sh](scripts/create_user.sh) script then **Enter** then **Ctrl+X**
 
 <p align="center">
    <img src="Images/Image 62.PNG">
@@ -529,7 +528,7 @@ REDO THIS ONE IT HAS THE HYPHENS IN IT
 </p>
 
 4. Run **./create_user.sh bobjones it**<br>
-`Runs the script to create a new user, bobjones, and add him to the it group — this doubles as adding a fourth employee to your fictional company.`
+`Runs the script to create a new user, bobjones, and add him to the it group. This doubles as adding a fourth employee to your fictional company.`
 
 <p align="center">
    <img src="Images/Image 64.PNG">
