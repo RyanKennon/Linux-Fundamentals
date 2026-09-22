@@ -1,4 +1,38 @@
-# Linux-Fundamentals
+<p align="center">
+  <img src="Images/Header.png" img width="469" height="263" alt="image">
+</p>
+
+# Linux Server Setup & Administration (Azure Virtual Environment)
+
+This project demonstrates hands-on Linux system administration on an Ubuntu Server 22.04 environment hosted in Microsoft Azure. The lab walks through provisioning the server, exploring the filesystem, managing users and groups, configuring file permissions, installing and verifying software, monitoring system processes and resources, diagnosing basic networking issues, and writing a Bash script to automate user provisioning. This lab reinforces essential Linux skills used in IT Support and Systems Administration roles, and was built while studying for the Linux Essentials certification.
+
+---
+
+## Environments and Technologies Used
+
+- Microsoft Azure
+- Ubuntu Server 22.04 LTS
+- Bash / Shell Scripting
+- Nginx
+- Networking & Protocols
+- Tools & Utilities (grep, find, locate, ss, ufw, etc.)
+
+---
+
+## Table of Contents
+
+- [1) Environment Setup](#1-environment-setup)
+- [2) Basic System Orientation](#2-basic-system-orientation)
+- [3) Filesystem Hierarchy Exploration](#3-filesystem-hierarchy-exploration)
+- [4) Navigation, Search & Getting Help](#4-navigation-search--getting-help)
+- [5) User & Group Management](#5-user--group-management)
+- [6) File Permissions & Ownership](#6-file-permissions--ownership)
+- [7) Package Management & Software](#7-package-management--software)
+- [8) Process & Resource Management](#8-process--resource-management)
+- [9) Basic Networking & Troubleshooting](#9-basic-networking--troubleshooting)
+- [10) Shell Scripting Basics](#10-shell-scripting-basics)
+
+---
 
 ### 1) Environment Setup
 
