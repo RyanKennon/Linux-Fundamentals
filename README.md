@@ -515,7 +515,7 @@ REDO THIS ONE IT HAS THE HYPHENS IN IT
 
 1. Run **nano create_user.sh**
 `Opens the nano text editor to create a new script file.`
-2. Press **Ctrl+O** then paste the following script then **Enter** then **Ctrl+X**
+2. Press **Ctrl+O** then paste the [create_user.sh](scripts/create_user.sh). script then **Enter** then **Ctrl+X**
 
 <p align="center">
   Image 62
